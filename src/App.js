@@ -18,9 +18,9 @@ function App() {
       currency: "INR",
       name: "Shivamfarms Test",
       description: "Test Transaction",
-      image: "https://example.com/your_logo",
-      order_id: "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
-      callback_url: "https://eneqd3r9zrjok.x.pipedream.net/",
+      // image: "https://example.com/your_logo",
+      // order_id: "order_9A33XWu170gUtm", //This is a sample Order ID. Pass the `id` obtained in the response of Step 1
+      // callback_url: "https://eneqd3r9zrjok.x.pipedream.net/",
       handler: (res) => {
         console.log(res);
         let { razorpay_payment_id: payId = "" } = res;
@@ -56,7 +56,7 @@ function App() {
       />
       <br />
       <br />
-      <button onClick={(e) => paymentStatus(e)}>Buy Now</button>
+      {/* <button onClick={(e) => paymentStatus(e)}>Buy Now</button> */}
     </div>
   );
 }
